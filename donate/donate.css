@@ -1,0 +1,57 @@
+
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	background-image: url(41.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: Open Sans, sans-serif;
+	opacity: 70%;
+
+}
+.card{
+	width: 600px;
+	height: 350px;
+	display: inline-block;text-align: center;
+	background-color: #fff;
+	padding: 15px;
+	box-sizing: border-box;
+	position: relative;
+	box-shadow: 0 25px 57px rgba(0,0,0,1);
+	animation: card 1.6s ease;
+	border-radius: 25px;
+
+} 
+.card img{
+	width: 400px;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+
+}
+@keyframes card{
+	0%{
+		width: 0;
+		height: 5px;
+		padding: 0;
+
+	}
+	50%{
+		width: 600px;
+		height: 5px;
+		padding: 0;
+	}
+	100%{
+		padding: inherit; 
+		height: 300px;
+	}
+
+}
